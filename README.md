@@ -1,3 +1,5 @@
+<img align="right" src="resources/images/button-savezon-blue@3x.webp">
+
 # Fluree Developer Community Home
 
 This repo is used to organize community interactions with the Fluree product
