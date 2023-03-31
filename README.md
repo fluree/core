@@ -1,4 +1,4 @@
-<img src="resources/images/stacked-safezon-blue@3x.webp" style="height: 200px">
+<img src="resources/images/stacked-safezone-blue@3x.webp" style="height: 200px">
 
 # Fluree Developer Community Home
 
