@@ -1,4 +1,4 @@
-<img align="right" src="resources/images/button-safezone-blue@3x.webp">
+<img align="right" src="resources/images/button-safezone-blue@3x.webp" style="max-height: 100px; max-width: 100px;">
 
 # Fluree Developer Community Home
 
