@@ -1,4 +1,4 @@
-<img align="right" src="resources/images/button-safezone-blue@3x.webp" style="height: 200px">
+<img align="right" src="resources/images/logo-yeti-symbol-blue@3x.webp" style="height: 200px">
 
 # Fluree Developer Community Home
 
