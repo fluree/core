@@ -1,0 +1,10 @@
+{:deps {org.clojure/clojure         {:mvn/version "1.11.1"}
+        com.fluree/db               {:git/url "https://github.com/fluree/db.git"
+                                     :git/sha "1c48a078af44ce4ab61f39410169d8c120300c56"}
+        com.fluree/http-api-gateway {:git/url "https://github.com/fluree/http-api-gateway.git"
+                                     :git/sha "0b616e4899716d690590b6efbca5385e221c0024"}}
+
+ :aliases
+ {:build {:deps       {io.github.clojure/tools.build {:git/tag "v0.9.4"
+                                                      :git/sha "76b78fe"}}
+          :ns-default build}}}
