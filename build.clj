@@ -1,7 +1,7 @@
 (ns build
   (:require [clojure.tools.build.api :as b]))
 
-(def app 'fluree/server)
+(def app 'fluree/core)
 (def version "3.0.0-alpha2")
 (def class-dir "target/classes")
 (def basis (b/create-basis {:project "deps.edn"}))

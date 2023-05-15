@@ -4,4 +4,6 @@
 
 (defn -main
   [& args]
-  (api/run-server {}))
+  (if-let [profile (some-> args first keyword)]
+    (api/run-server {:profile profile})
+    (api/run-server {})))
