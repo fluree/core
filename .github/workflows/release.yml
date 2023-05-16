@@ -25,11 +25,11 @@ jobs:
       - id: get-tag
         run: |
           tag=$(echo ${{ github.ref }} | cut -d/ -f3)
-          echo "::set-output name=tag::$tag"
+          echo "tag=$tag" >> $GITHUB_OUTPUT
       - id: get-version
         run: |
           version=$(echo ${{ steps.get-tag.outputs.tag }} | cut -c 2-)
-          echo "::set-ouput name=version::$version"
+          echo "version=$version" >> $GITHUB_OUTPUT
       - name: Determine Docker tags
         id: tags
         run: |
@@ -63,9 +63,9 @@ jobs:
             TAGS+="${BASE_IMAGE}:latest"
           fi
           
-          echo ::set-output name=version::${VERSION}
-          echo ::set-output name=tags::joinWith(',' "${TAGS[@]}")
-          echo ::set-output name=created::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tags=joinWith(',' \"${TAGS[@]}\")" >> $GITHUB_OUTPUT
+          echo "created=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_OUTPUT
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
