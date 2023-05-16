@@ -33,7 +33,7 @@ jobs:
       - name: Determine Docker tags
         id: tags
         run: |
-          joinWith() {
+          function joinWith {
             local IFS="$1"
             shift
             echo "$*"
